@@ -114,7 +114,7 @@ SubmitButton.addEventListener("click", () => {
         if(currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-            quiz.innerHTML = `<h2>FUCK YOU, IDIOT! YOU SUCK!</h2> <button onClick="location.reload();">Try Again</button>`
+            quiz.innerHTML = `<h2>You scored ${score} out of ${quizData.length}!</h2> <button onClick="location.reload();">Try Again</button>`
         }
     }
 });
